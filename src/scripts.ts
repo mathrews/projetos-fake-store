@@ -20,7 +20,8 @@ const listarUsuariosNaTela = (lista) => {
     lista.map(item => {
         users.innerHTML += `
         <li>
-            <h1>${item.name.firstname} ${item.name.lastname}</h1>
+            <h1>Nome: ${item.name.firstname}</h1>
+            <h1>Sobrenome: ${item.name.lastname}</h1>
             <p>Email: ${item.email}</p>
             <p>telefone: ${item.phone}</p>
             <a href="https://www.google.com/maps?q=${item.address.geolocation.lat},${item.address.geolocation.long}" target="_blank">Localização</a>
